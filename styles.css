@@ -1,0 +1,29 @@
+/* iTryiLike - clean slate */
+:root { --ink:#2b2620; --muted:#7a6f63; --accent:#b4552d; --bg:#fdfbf7; --card:#ffffff; --line:#e9e2d6; }
+* { box-sizing:border-box; }
+body { font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background:var(--bg); margin:0; line-height:1.65; }
+.wrap { max-width:680px; margin:0 auto; padding:0 20px; }
+header.site { text-align:center; padding:48px 20px 28px; border-bottom:1px solid var(--line); }
+header.site h1 { font-size:2.4rem; margin:0; letter-spacing:1px; }
+header.site h1 a { color:var(--ink); text-decoration:none; }
+header.site p.tag { color:var(--muted); font-style:italic; margin:8px 0 0; }
+nav { text-align:center; padding:14px 0; border-bottom:1px solid var(--line); font-size:.95rem; }
+nav a { color:var(--muted); text-decoration:none; margin:0 12px; }
+nav a:hover { color:var(--accent); }
+article.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:26px 28px; margin:28px 0; }
+article.card h2 { margin:0 0 6px; font-size:1.5rem; }
+article.card h2 a { color:var(--ink); text-decoration:none; }
+article.card h2 a:hover { color:var(--accent); }
+.meta { color:var(--muted); font-size:.85rem; margin-bottom:12px; }
+.more { color:var(--accent); text-decoration:none; font-style:italic; }
+.post-body img { max-width:100%; height:auto; border-radius:6px; }
+.post-body figure { margin:1.2em 0; }
+h1.post-title { font-size:2rem; margin:32px 0 6px; }
+.back { display:inline-block; margin:28px 0 40px; color:var(--accent); text-decoration:none; }
+footer.site { text-align:center; color:var(--muted); font-size:.85rem; padding:30px 20px 50px; border-top:1px solid var(--line); margin-top:40px; }
+.archive-year { font-size:1.3rem; margin:34px 0 10px; color:var(--accent); }
+.archive-list { list-style:none; padding:0; margin:0 0 10px; }
+.archive-list li { padding:7px 0; border-bottom:1px dotted var(--line); }
+.archive-list a { color:var(--ink); text-decoration:none; }
+.archive-list a:hover { color:var(--accent); }
+.archive-list .d { color:var(--muted); font-size:.82rem; margin-left:10px; }

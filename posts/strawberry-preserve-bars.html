@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strawberry Preserve Bars - iTryiLike</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html">iTryiLike</a></h1>
+<p class="tag">stuff you should try.</p>
+</div></header>
+<nav><a href="../index.html">Home</a><a href="../archive.html">All reviews</a><a href="../about.html">About</a></nav>
+<div class="wrap">
+<h1 class="post-title">Strawberry Preserve Bars</h1>
+<div class="meta">June 21, 2009</div>
+<div class="post-body">
+<p>New favorite dessert.. Strawberry Preserve Bars &#8211; from one of my favorite recipe sites &#8211; recipezaar.com.</p>
+<p>I made my own strawberry jam from my recent strawberry picking session, and making your own homemade jam makes such a difference &#8211; ill post the recipe for the jam later.. But I should note, my new favorite farm for pick your own is Lees Turkey Farm in NJ.</p>
+<p>anyway, so many favorites &#8211; so little time, so back to the recipe</p>
+<p id="servings" class="servings">                 20      bars       <a href="void(0);" id="change" class="noprint">(change servings and units)</a>  </p>
+<div id="scale" style="display:none;">            Change to:                bars                       US                   Metric            <a href="void(0);" class="noprint"><img src="https://i0.wp.com/img.recipezaar.com/closex.gif" alt="Close" /></a>     </div>
+<div id="reviewcomments" class="popup" style="display:none;">    <span class="inline_rating">     </p>
+<ul class="star-rating">
+<li class="my-rating" id="star_list" style="width:100%;"></li>
+<li><a href="void(0)" title="1 star out of 5" class="one-star">1</a></li>
+<li><a href="void(0)" title="2 stars out of 5" class="two-stars">2</a></li>
+<li><a href="void(0)" title="3 stars out of 5" class="three-stars">3</a></li>
+<li><a href="void(0)" title="4 stars out of 5" class="four-stars">4</a></li>
+<li><a href="void(0)" title="5 stars out of 5" class="five-stars">5</a></li>
+</ul>
+<p>    </span>    </p>
+<p id="clear-my-rating"><a href="void(0)">clear stars</a></p>
+<h3>Write a Review! <span class="tip">(optional)</span></h3>
+<p>       <button class="submit">Submit</button>       <button class="cancel">Cancel</button>     </p>
+</p></div>
+<p>       var g_rid=&#8217;1151&#8242;; var g_review_default=&#8221;Discuss the taste, how difficult it was to make, any adaptations you made or menu suggestions. If you did not like it, please explain why or provide constructive criticism.&#8221;   function hideinline(el,img) {         if (document.getElementById(el).style.display == &#8220;none&#8221; ) {                 document.getElementById(el).style.display = &#8220;inline&#8221;                 if (img) document.getElementById(img).src=&#8221;<a href="http://img" rel="nofollow">http://img</a>.{$mydomain}/images/2008/minus_sign_brownbkgrnd.gif&#8221;;         }         else {                 document.getElementById(el).style.display = &#8220;none&#8221;                 if (img) document.getElementById(img).src=&#8221;<a href="http://img" rel="nofollow">http://img</a>.{$mydomain}/images/2008/plus_sign_brownbkgrnd.gif&#8221;;         }         if (typeof t != &#8216;undefined&#8217;) xe(t); }  function clickRateItNow(){  if (!g_app.user.id) {   window.location=&#8217;/members/login.php?url=/&#8217;+g_rid+&#8217;&amp;msg=addreview&#8217;;  }  else {   Element.show($(&#8216;reviewcomments&#8217;));   positionObjectToElement(document.getElementById(&#8216;rate_it&#8217;), document.getElementById(&#8216;reviewcomments&#8217;), 0, 0);  } }  function findPos(pObject) {       var _currentLeft = _currentTop = 0;       if (pObject.offsetParent) {            _currentLeft = pObject.offsetLeft            _currentTop = pObject.offsetTop            while (pObject = pObject.offsetParent) {                 _currentLeft += pObject.offsetLeft                 _currentTop += pObject.offsetTop            }       }       return [_currentLeft, _currentTop];  }     function positionObjectToElement(pObject, pThis, pOffsetX, pOffsetY) {       var _coordinates = findPos(pObject);       pThis.style.top = _coordinates[1] + pOffsetY + &#8220;px&#8221;;       pThis.style.left = _coordinates[0] + pOffsetX + &#8220;px&#8221;;  }  function clickStars(v_star_rating){  $(&#8216;reviewrating&#8217;).value=v_star_rating;  showStars(v_star_rating); }   function clickCancelReview() {  Element.hide($(&#8216;reviewcomments&#8217;));  return false; }  function clickSubmitReview() {  var text=$F(&#8216;reviewtext&#8217;).replace(/^ +/,&#8221;);  var rating=$(&#8216;reviewrating&#8217;).value;  var textlength = text.length;  var rform = Form.serialize($(&#8216;reviewform&#8217;));  // Verify that there&#8217;s either a rating or there&#8217;s text  if (rating==0 &amp;&amp; (textlength==0 || text == g_review_default)) {   alert(&#8216;You didn\&#8217;t add a rating or any comments.&#8217;);  }  else {   if ( text == g_review_default) Element.update(&#8216;reviewtext&#8217;, &#8221;);   Element.hide($(&#8216;reviewcomments&#8217;));   new Ajax.Request(    &#8216;/services/rest/recipes/postreview&#8217;,    {     method:&#8217;post&#8217;,     parameters: Form.serialize($(&#8216;reviewform&#8217;)),     onComplete: showPostedReview    }   );  } }  function selectReviewText() {  document.getElementById(&#8216;reviewtext&#8217;).focus();  document.getElementById(&#8216;reviewtext&#8217;).select(); }  function showPostedReview(doc) {  var err=doc.responseXML.getElementsByTagName(&#8216;error&#8217;);  if (err.length) {   Element.update(&#8216;status&#8217;,&#8221;<span class="'answer'">That didn&#8217;t work: &#8221; + RzXMLUtil.textOfElement(err[0],&#8217;msg&#8217;)+&#8221;&#8221;);  }  else {   Element.hide($(&#8216;reviewcomments&#8217;));   Element.show($(&#8216;reviewsubmitted&#8217;));   showStars($F(&#8216;reviewrating&#8217;));  } }  /* function showRatingDesc(v_star_rating) {  switch (v_star_rating) {   case 1: Element.update(&#8216;star_rating_desc&#8217;, &#8220;Didn&#8217;t Like It&#8221;);   case 2: Element.update(&#8216;star_rating_desc&#8217;, &#8220;OK&#8221;);   case 3: Element.update(&#8216;star_rating_desc&#8217;, &#8220;Liked it&#8221;);   case 4: Element.update(&#8216;star_rating_desc&#8217;, &#8220;Loved it&#8221;);   case 5: Element.update(&#8216;star_rating_desc&#8217;, &#8220;Outstanding&#8221;);   default: ELement.update(&#8216;star_rating_desc&#8217;, &#8220;&#8221;);  }  return true; } */  function showStars(v_star_rating) { // var v_per_rating=(v_star_rating/5)*100;  var v_width=&#8221;width: &#8221; + (v_star_rating/5)*100 + &#8220;%;&#8221;;  $(&#8216;star_list&#8217;).setStyle(v_width);  $(&#8216;star_list&#8217;).style.backgroundPosition=&#8221;left center&#8221;;  return false; }  if (g_app.user.id) {  if(g_app.user.lim_rnotes) {   $(&#8216;recnote-form&#8217;).action=&#8221;/recipe/note?rid=&#8221;+g_rid;  }  var brow=g_app.getBrowser();  var opt=&#8221;;  // Fix IE&#8217;s caching bug  if (brow &amp;&amp; brow.name==&#8217;MSIE&#8217;) {   var d=new Date();   opt=&#8217;?fixIE=&#8217;+d.getTime();  }   new Ajax.Request(&#8216;/services/rest/recipes/p13n.php&#8217;+opt,{   method: &#8216;get&#8217;,   parameters: &#8216;rid=&#8217;+g_rid,   onSuccess: function(req) {    var pdata=eval(&#8216;(&#8216;+req.responseText+&#8217;)&#8217;);     if (pdata.review) {     $(&#8216;reviewrating&#8217;).value=0;     showStars(0);     Element.update(&#8216;reviewtext&#8217;, g_review_default);      if (pdata.review.textplain.length &gt; 0) {      Element.update(&#8216;reviewtext&#8217;, pdata.review.textplain);     }      var star_rating=pdata.review.rating;     if(star_rating &gt; 0) {      $(&#8216;reviewrating&#8217;).value=pdata.review.rating;      showStars(star_rating);     }    }    if (pdata.note) {     Element.show($(&#8216;recnote&#8217;));              if(pdata.note.mtime &gt; 0){       var d=new Date(pdata.note.mtime*1000);     } else {      var d=new Date(pdata.note.ptime*1000);     }     Element.update(&#8216;recnote-time&#8217;,d.toLocaleDateString());     Element.update(&#8216;recnote-text&#8217;, pdata.note.text);     $(&#8216;recnote-text-plain&#8217;).value=pdata.note.textplain;     }   }  })     //var d=new Date(pdata.review.time*1000); }              <!--concordance-begin--> </p>
+<div class="item articles">
+<h3>Ingredients</h3>
+<ul>
+<li>             3/4 cup <a href="http://www.recipezaar.com/library/getentry.zsp?id=421">margarine</a>     </li>
+<li> 4 teaspoons <a href="http://www.recipezaar.com/library/getentry.zsp?id=421">margarine</a>     </li>
+<li> 1 cup <a href="http://www.recipezaar.com/library/getentry.zsp?id=375">brown sugar</a>, firmly packed     </li>
+<li> 1 1/2 cups <a href="http://www.recipezaar.com/library/getentry.zsp?id=64">flour</a>     </li>
+<li> 1/2 teaspoon <a href="http://www.recipezaar.com/library/getentry.zsp?id=7">baking soda</a>     </li>
+<li> 1/4 teaspoon <a href="http://www.recipezaar.com/library/getentry.zsp?id=359">salt</a>     </li>
+<li> 1 1/2 cups <a href="http://www.recipezaar.com/library/getentry.zsp?id=465">old fashioned oats</a> or      <a href="http://www.recipezaar.com/library/getentry.zsp?id=465">quick-cooking oats</a>, uncooked     </li>
+<li> 1 cup <a>nuts</a>, chopped     </li>
+<li> 1 cup <a>strawberry preserves</a>     </li>
+<li> 1/4 cup <a>semi-sweet chocolate chips</a>            </li>
+</ul>
+<h3>Directions</h3>
+<ol>
+<li>Heat oven to 400°F.<span style="font-weight:bold;"></span></li>
+<li>Beat 3/4 cup margarine and sugar until light and fluffy.</li>
+<li>
+<h5>Add combined flour, soda and salt; mix well.</h5>
+</li>
+<li>
+<h5>Stir in oats and nuts.</h5>
+</li>
+<li>
+<h5>Reserve  1/2 cup crumb mixture.  Press remaining crumb  mixture onto bottom of greased 13 x 9-inch baking pan.</h5>
+</li>
+<li>
+<h5>Spread the strawberry preserves over the first layer.</h5>
+</li>
+<li>
+<h5>Sprinkle  with reserved crumb mixture.  Bake 20-25 minutes. Cool.</h5>
+</li>
+<li>
+<h5>Melt Chips and 4 teaspoons margarine over low heat (or microwave),  stirring until smooth.</h5>
+</li>
+<li>
+<h5>Drizzle over crumb mixture. Refrigerate 1 hour; cut into bars.</h5>
+</li>
+</ol></div>
+<p>This recipe is perfect for after you go strawberry picking, and have made a ton of jam to give away and still have too much jam left over.. make bars and put that jam to use!<br />SOO good served warm on top of ice cream, and most people have the ingredients handy to make it on a whim.. thats another reason I like it so much!</p>
+
+</div>
+<a class="back" href="../index.html">&larr; Back to all reviews</a>
+
+</div>
+<footer class="site"><div class="wrap">iTryiLike &mdash; stuff you should try.</div></footer>
+</body>
+</html>
