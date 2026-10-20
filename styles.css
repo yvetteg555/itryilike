@@ -61,6 +61,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 /* ornament divider */
 .ornament{height:24px;margin:10px auto 0;max-width:340px;
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='24' viewBox='0 0 140 24'%3E%3Cpath d='M4 12 H50' stroke='%23b8862f' stroke-width='1.5'/%3E%3Cpath d='M90 12 H136' stroke='%23b8862f' stroke-width='1.5'/%3E%3Cpath d='M70 4c-3.2-4.2-10.5-2-10.5 3.2C59.5 11.4 64.7 14.6 70 19c5.3-4.4 10.5-7.6 10.5-11.8C80.5 2 73.2-.2 70 4z' fill='%23e59bb2'/%3E%3Ccircle cx='56' cy='12' r='1.8' fill='%237fa8d9'/%3E%3Ccircle cx='84' cy='12' r='1.8' fill='%237fa8d9'/%3E%3C/svg%3E") center/contain no-repeat}
+/* hero banner (storybook tea-party scene from the theme mockup) */
+.hero-banner{display:block;width:100%;height:auto;border-radius:18px;border:3px solid var(--gold);
+  outline:1px solid var(--gold-soft);outline-offset:4px;
+  box-shadow:0 12px 34px rgba(74,59,40,.22);margin:4px 0 34px}
 /* section titles */
 .section-title{font-family:var(--serif);font-size:1.55rem;font-weight:700;margin:38px 0 20px;
   letter-spacing:-.2px;color:var(--gold-deep);text-align:center}
